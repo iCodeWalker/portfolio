@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MenuBar from "../components/menuBar";
+import Header from "../components/Header";
 import devicesImage from "../assets/images/hero-devices.svg";
 
 const HomePage = () => {
@@ -9,7 +9,7 @@ const HomePage = () => {
   );
   return (
     <div>
-      <MenuBar />
+      <Header />
       <div
         style={{
           display: "flex",

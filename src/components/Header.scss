@@ -1,0 +1,38 @@
+@import "../sass/main.scss";
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #5be9b9;
+  box-shadow: $shadow-green-dark;
+
+  &__container {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__item {
+    color: $color-white-secondary;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: $color-tertiary;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.logo__box {
+  margin: 5px;
+}
+.logo {
+  height: 80px;
+}
