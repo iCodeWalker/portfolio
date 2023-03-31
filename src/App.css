@@ -1,13 +1,11 @@
 .App {
   text-align: center;
- 
 }
 body {
   background-color: #1d1d1d;
 }
 
 .App-logo {
-
   pointer-events: none;
 }
 
