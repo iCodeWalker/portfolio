@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo__box">
-        <img src={CompanyLogo} alt="logo" style={{ margin: 10 }} class="logo" />
+        <img src={CompanyLogo} alt="logo" class="logo" />
       </div>
       <div className="header__container">
         <p className="header__item">About</p>

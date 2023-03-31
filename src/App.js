@@ -15,16 +15,14 @@ function App() {
     <div>
       <div
         style={{
-          borderBottom: "3px solid #5BE9B9",
-          boxShadow: "1px 2px 9px #5BE9B9",
+          borderBottom: "2px solid #5BE9B9",
         }}
       >
         <HomePage />
       </div>
       <div
         style={{
-          borderBottom: "3px solid #5BE9B9",
-          dropShadow: "0px 0px 9px 2px #5BE9B9",
+          borderBottom: "2px solid #5BE9B9",
         }}
       >
         <AboutPage />
@@ -32,32 +30,28 @@ function App() {
 
       <div
         style={{
-          borderBottom: "3px solid #5BE9B9",
-          dropShadow: "0px 0px 9px 2px #5BE9B9",
+          borderBottom: "2px solid #5BE9B9",
         }}
       >
         <WorkPage />
       </div>
       <div
         style={{
-          borderBottom: "3px solid #5BE9B9",
-          dropShadow: "0px 0px 9px 2px #5BE9B9",
+          borderBottom: "2px solid #5BE9B9",
         }}
       >
         <ExperiencePage />
       </div>
       <div
         style={{
-          borderBottom: "3px solid #5BE9B9",
-          dropShadow: "0px 0px 9px 2px #5BE9B9",
+          borderBottom: "2px solid #5BE9B9",
         }}
       >
         <TechnologiesPage />
       </div>
       <div
         style={{
-          borderBottom: "3px solid #5BE9B9",
-          dropShadow: "0px 0px 9px 2px #5BE9B9",
+          borderBottom: "2px solid #5BE9B9",
         }}
       >
         <ContactPage />

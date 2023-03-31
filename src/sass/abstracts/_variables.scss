@@ -10,4 +10,12 @@ $color-black: #000;
 
 $default-font-size: 1.6rem;
 
-$shadow-green-dark: 0px 1px 10px rgba(91, 233, 185, 0.7);
+$shadow-green-dark: 0px 0px 5px rgba(91, 233, 185, 0.7);
+
+// Break points
+
+$bp-mobile-small: 360px;
+$bp-mobile: 600px;
+$bp-tablet-port: 900px;
+$bp-tablet-land: 1200px;
+$bp-desktop-big: 1800px;
