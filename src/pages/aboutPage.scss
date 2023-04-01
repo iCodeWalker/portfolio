@@ -1,0 +1,119 @@
+@import "../sass/main.scss";
+
+.about-section {
+  padding: 5rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    padding: 2rem;
+  }
+
+  // &__image-container {
+  //   display: none;
+  //   flex-basis: 30%;
+  //   box-shadow: 0.2rem 0.2rem 0.4rem 0.4rem #5be9b950;
+  //   border-radius: 1rem;
+  //   overflow: hidden;
+  //   height: 100%;
+  //   margin-left: 3rem;
+
+  //   @media only screen and (max-width: $bp-mobile) {
+  //     width: 55%;
+  //     margin-top: 3rem;
+  //   }
+  // }
+
+  &__developer-image {
+    border-radius: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__list {
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-white-secondary;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+
+        &:first-child {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.technologies {
+  display: flex;
+
+  &__ul-list {
+    flex: 0 0 40%;
+  }
+
+  &__logos {
+    flex: 0 0 40%;
+    position: relative;
+    padding: 1rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      flex: 0 0 60%;
+    }
+  }
+
+  &__logo {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+
+    &-1 {
+      top: 1rem;
+      left: 1rem;
+      height: 4rem;
+      width: 4rem;
+    }
+
+    &-2 {
+      top: 6rem;
+      left: 6rem;
+    }
+
+    &-3 {
+      top: 12rem;
+      left: 12rem;
+    }
+
+    &-4 {
+      top: 12rem;
+      right: 12rem;
+    }
+
+    &-5 {
+      top: 6rem;
+      right: 6rem;
+    }
+
+    &-6 {
+      top: 1rem;
+      right: 1rem;
+    }
+
+    &-6 {
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+}

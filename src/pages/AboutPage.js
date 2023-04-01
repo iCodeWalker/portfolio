@@ -4,26 +4,19 @@ import logoFlutter from "../assets/images/logos_flutter.png";
 import logoReact from "../assets/images/logos_react.png";
 import logoJs from "../assets/images/logos_javascript.png";
 import logoTs from "../assets/images/logos_typescript-icon.png";
+import logoFigma from "../assets/images/logos_figma.png";
+
+import { FaNode } from "react-icons/fa";
+
+import "./aboutPage.scss";
 
 const AboutPage = () => {
   return (
-    <div style={{ marginLeft: 80, marginBottom: 30 }}>
-      <p style={{ color: "#CCD6F6", fontSize: 35, fontWeight: "bold" }}>
-        About Me :
-      </p>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <div
-          style={{
-            color: "#ffffff",
-            width: "50%",
-          }}
-        >
-          <p>
+    <div className="about-section">
+      <p className="heading-secondary">About Me :</p>
+      <div className="about-section__container">
+        <div className="about-section__text ">
+          <p className="paragraph-2">
             Hello! My name is Vaibhav I’m a software engineer specializing in
             building exceptional digital experiences. and I enjoy creating
             things that live on the internet. My interest in web development
@@ -32,84 +25,72 @@ const AboutPage = () => {
             started doing more study in web development it turns out to be
             challenging and i accepted it.
           </p>
-          <p>
+          <p className="paragraph-2 u-margin-top-small">
             Now talking of today, I have worked with some startups, a
             consultancy and as a freelancer in some of the good projects that
             helped me to learn a lot.
           </p>
 
-          <div
-            style={{
-              color: "#ffffff",
-              display: "flex",
-            }}
-          >
-            <div>
-              <p>
-                Here are a few technologies I’ve been working with recently:
-              </p>
-              <p>1. JavaScript (ES 6)</p>
-              <p>2. TypeScript</p>
-              <p>3. React</p>
-              <p>4. React Native</p>
-              <p>5. Flutter</p>
-            </div>
+          <div className="about-section__list">
+            <p className="paragraph u-margin-top-big">
+              Here are a few technologies I’ve been working with recently:
+            </p>
 
-            <div style={{ marginTop: 50, marginLeft: 30 }}>
-              <div style={{ display: "flex", flexDirection: "column" }}>
-                <img
-                  src={logoFlutter}
-                  style={{ margin: 10 }}
-                  width={30}
-                  height={30}
+            <div className="technologies u-margin-top-big">
+              <ul className="technologies__ul-list">
+                <li>JavaScript (ES 6)</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>React Native</li>
+                <li>Node</li>
+                <li>Express</li>
+              </ul>
+
+              <div className="technologies__logos">
+                <FaNode
+                  color="green"
+                  className="technologies__logo technologies__logo-1"
+                  size={60}
                 />
+
+                <img
+                  src={logoJs}
+                  alt="logo-javascript"
+                  className="technologies__logo technologies__logo-2"
+                />
+
                 <img
                   src={logoReact}
-                  style={{ marginLeft: 70 }}
-                  width={30}
-                  height={30}
+                  alt="logo-react"
+                  className="technologies__logo technologies__logo-3"
                 />
-              </div>
-              <div>
-                <div style={{ display: "flex", flexDirection: "column" }}>
-                  <img
-                    src={logoJs}
-                    style={{ margin: 10 }}
-                    width={30}
-                    height={30}
-                  />
-                  <img
-                    src={logoTs}
-                    style={{ marginLeft: 50 }}
-                    width={30}
-                    height={30}
-                  />
-                </div>
+                <img
+                  src={logoFigma}
+                  alt="logo-react"
+                  className="technologies__logo technologies__logo-4"
+                />
+                <img
+                  src={logoFlutter}
+                  alt="logo-flutter"
+                  className="technologies__logo technologies__logo-5"
+                />
+                <img
+                  src={logoTs}
+                  alt="logo-typescript"
+                  className="technologies__logo technologies__logo-6"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <div
-          style={{
-            marginLeft: 100,
-            marginRight: 100,
-            boxShadow: "2px 2px 4px 8px #5BE9B950",
-            borderRadius: 10,
-            width: "30%",
-            height: "40%",
-          }}
-        >
+        {/* <div className="about-section__image-container">
           <img
             src={AboutImage}
-            style={{
-              borderRadius: 10,
-              width: "auto",
-              maxWidth: "100%",
-              maxHeight: "100%",
-            }}
+            alt="about-img"
+            className="about-section__developer-image "
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

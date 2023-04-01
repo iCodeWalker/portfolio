@@ -12,19 +12,19 @@ html {
   font-size: 62.5%;
 
   @media only screen and (max-width: $bp-tablet-port) {
-    font-size: 62.5%;
+    font-size: 56.25%; // 9px
   }
 
   @media only screen and (max-width: $bp-tablet-land) {
-    font-size: 62.5%;
+    font-size: 50%; // 8px
   }
 
   @media only screen and (max-width: $bp-mobile) {
-    font-size: 50%;
+    font-size: 45%; // 7.2px
   }
 
   @media only screen and (max-width: $bp-mobile-small) {
-    font-size: 45%;
+    font-size: 45%; // 7.2px
   }
 
   // @include respond-phone {

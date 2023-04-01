@@ -3,7 +3,7 @@
 .home-section {
   width: 100vw;
   display: flex;
-  padding-bottom: 5rem;
+  padding: 5rem;
   justify-content: space-evenly;
   align-items: center;
 
@@ -13,11 +13,10 @@
     justify-content: center;
     align-items: flex-start;
     padding: 2rem;
+    padding-bottom: 4rem;
   }
 
   &__text {
-    margin-left: 8rem;
-    margin-top: 8rem;
     flex: 0 0 50%;
 
     @media only screen and (max-width: $bp-mobile) {
@@ -30,14 +29,12 @@
   &__image {
     height: 70%;
     width: 70%;
-    margin-right: 8rem;
 
     flex: 0 0 40%;
 
     @media only screen and (max-width: $bp-mobile) {
       height: 50%;
       width: 50%;
-      margin-right: 0;
       margin-top: 4rem;
       flex: 0 0 90%;
     }
