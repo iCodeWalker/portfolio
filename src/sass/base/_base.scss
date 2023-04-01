@@ -9,14 +9,14 @@
 html {
   /* font-size: 10px; */
   // 1rem = 10px
-  font-size: 100%;
+  font-size: 62.5%;
 
   @media only screen and (max-width: $bp-tablet-port) {
-    font-size: 80%;
+    font-size: 62.5%;
   }
 
   @media only screen and (max-width: $bp-tablet-land) {
-    font-size: 75%;
+    font-size: 62.5%;
   }
 
   @media only screen and (max-width: $bp-mobile) {
@@ -24,7 +24,7 @@ html {
   }
 
   @media only screen and (max-width: $bp-mobile-small) {
-    font-size: 50%;
+    font-size: 45%;
   }
 
   // @include respond-phone {
