@@ -2,15 +2,45 @@ import React from "react";
 import WorkCard from "../components/workCard";
 import WorkDescriptionComponent from "../components/workDescriptionComponent";
 
+import AmazonClone from "../assets/images/amazon-clone.png";
+
 const WorkPage = () => {
   return (
-    <div style={{ marginLeft: 80, marginBottom: 30 }}>
-      <p style={{ color: "#CCD6F6", fontSize: 35, fontWeight: "bold" }}>
-        Works :
-      </p>
-      <WorkDescriptionComponent />
-      <WorkDescriptionComponent />
-      <WorkDescriptionComponent />
+    <div style={{ padding: 50 }}>
+      <p className="heading-secondary">Works :</p>
+      <WorkDescriptionComponent
+        title="Amazon Clone"
+        description="  A nicer look at your GitHub profile and repo stats. Includes data of
+            your top languages, starred repositories, and sort through your top
+            repos by number of stars, forks, and size. A nicer look at your
+            GitHub profile and repo stats. Includes data of your top languages,
+            starred repositories."
+        technologiesUsed={["React", "Axios", "Netlify", "react-icons"]}
+        projectImage={AmazonClone}
+      />
+
+      <WorkDescriptionComponent
+        title="Amazon Clone"
+        description="  A nicer look at your GitHub profile and repo stats. Includes data of
+            your top languages, starred repositories, and sort through your top
+            repos by number of stars, forks, and size. A nicer look at your
+            GitHub profile and repo stats. Includes data of your top languages,
+            starred repositories."
+        technologiesUsed={["React", "Axios", "Netlify", "react-icons"]}
+        projectImage={AmazonClone}
+      />
+
+      <WorkDescriptionComponent
+        title="Amazon Clone"
+        description="  A nicer look at your GitHub profile and repo stats. Includes data of
+            your top languages, starred repositories, and sort through your top
+            repos by number of stars, forks, and size. A nicer look at your
+            GitHub profile and repo stats. Includes data of your top languages,
+            starred repositories."
+        technologiesUsed={["React", "Axios", "Netlify", "react-icons"]}
+        projectImage={AmazonClone}
+      />
+
       <p
         style={{
           color: "#CCD6F6",

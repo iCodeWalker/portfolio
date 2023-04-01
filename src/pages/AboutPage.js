@@ -1,5 +1,4 @@
 import React from "react";
-import AboutImage from "../assets/images/AboutImage.jpg";
 import logoFlutter from "../assets/images/logos_flutter.png";
 import logoReact from "../assets/images/logos_react.png";
 import logoJs from "../assets/images/logos_javascript.png";

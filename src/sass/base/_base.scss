@@ -11,11 +11,11 @@ html {
   // 1rem = 10px
   font-size: 62.5%;
 
-  @media only screen and (max-width: $bp-tablet-port) {
+  @media only screen and (max-width: $bp-tablet-land) {
     font-size: 56.25%; // 9px
   }
 
-  @media only screen and (max-width: $bp-tablet-land) {
+  @media only screen and (max-width: $bp-tablet-port) {
     font-size: 50%; // 8px
   }
 
@@ -62,6 +62,6 @@ body {
 }
 
 ::selection {
-  background-color: $color-primary;
+  background-color: $color-tertiary;
   color: $color-white;
 }

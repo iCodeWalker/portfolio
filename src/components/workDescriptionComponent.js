@@ -1,103 +1,56 @@
 import React from "react";
-import AmazonClone from "../assets/images/amazon-clone.png";
-import gitLogo from "../assets/images/Git.png";
 import externalLink from "../assets/images/external-link-alt.png";
+import { FaGithub } from "react-icons/fa";
 
-const WorkDescriptionComponent = () => {
+import "./workDescriptionComponent.scss";
+
+const WorkDescriptionComponent = ({
+  title,
+  description,
+  technologiesUsed,
+  projectImage,
+  gitHubLink,
+  projectLink,
+}) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        position: "relative",
-        marginBottom: 20,
-        paddingBottom: 20,
-        marginRight: 200,
-        marginLeft: 80,
-        marginBottom: 100,
-        borderBottom: "3px solid #5BE9B9",
-        dropShadow: "0px 0px 0px #5BE9B9",
-      }}
-    >
-      <div
-        style={{
-          border: "1px solid #ffffff ",
-          width: "60%",
-          height: "30%",
-          boxShadow: "2px 2px 4px 8px #5BE9B950",
-          borderRadius: 10,
-        }}
-      >
+    <div className="work-description">
+      <div className="work-description__image-section">
         <img
-          src={AmazonClone}
+          src={projectImage}
           alt="Amazon-clone-img"
-          style={{
-            borderRadius: 10,
-            maxWidth: "100%",
-            maxHeight: "100%",
-            opacity: 0.5,
-          }}
+          className="work-description__image"
         />
       </div>
-      <div>
-        <p
-          style={{
-            color: "#ffffff",
-            fontWeight: "bold",
-            fontSize: 20,
-            alignSelf: "end",
-            position: "absolute",
-            top: 0,
-            right: 10,
-          }}
-        >
-          Project Name
+      <div className="work-description__details">
+        <p className="work-description__details-title heading-tertiary">
+          {title}
         </p>
-        <div
-          style={{
-            border: "1px solid #ffffff",
-            height: 100,
-            width: "40%",
-            backgroundColor: "#1d1d1d",
-            zIndex: 20,
-            position: "absolute",
-            top: 70,
-            right: 10,
-            opacity: 0.9,
-            padding: 10,
-          }}
-        >
-          <p style={{ color: "#ffffff" }}>
-            A nicer look at your GitHub profile and repo stats. Includes data
-            visualizations of your top languages, starred repositories, and sort
-            through your top repos by number of stars, forks, and size.
-          </p>
+        <div className="work-description__details-text--container">
+          <p className="paragraph-3">{description}</p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-start",
-            position: "absolute",
-            bottom: 20,
-            right: 10,
-            color: "#ffffff",
-            width: "30%",
-            fontSize: 12,
-          }}
-        >
-          <p>React</p>
-          <p>Axios</p>
-          <p>Netlify</p>
-          <p>API's</p>
-          <div>
-            <img src={gitLogo} width={15} height={15} style={{ margin: 10 }} />
+        <div className="details-tech-used">
+          {technologiesUsed?.map((item, index) => {
+            return (
+              <p className="details-tech-used--item" key={index}>
+                {item}
+              </p>
+            );
+          })}
 
-            <img
-              src={externalLink}
-              width={15}
-              height={15}
-              style={{ margin: 10 }}
-            />
+          <div className="icons-group">
+            <div onClick={gitHubLink} className="icons-group__github">
+              <FaGithub size={25} />
+            </div>
+
+            <div onClick={projectLink}>
+              <img
+                className="icons-group__projectLink"
+                src={externalLink}
+                alt="external link"
+                width={20}
+                height={20}
+              />
+            </div>
           </div>
         </div>
       </div>
