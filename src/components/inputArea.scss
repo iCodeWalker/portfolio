@@ -1,0 +1,22 @@
+@import "../sass/main.scss";
+
+.input-area {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: $color-white;
+  padding: 1rem;
+  border: 2px solid $color-tertiary;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem #5be9b950;
+  width: 30%;
+  transition: all 0.3s;
+
+  @media only screen and (max-width: $bp-tablet-port) {
+    width: 50%;
+  }
+
+  &:focus {
+    outline: none;
+    transform: scale(1.08);
+  }
+}
