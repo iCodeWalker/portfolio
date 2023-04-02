@@ -12,6 +12,14 @@
   position: relative;
   margin: 2rem 1rem;
 
+  @media only screen and (max-width: $bp-tablet-port) {
+    width: 40%;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 75%;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;

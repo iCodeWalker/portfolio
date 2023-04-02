@@ -3,131 +3,92 @@ import LinkedinLogo from "../assets/images/logos_linkedin.png";
 import InstaLogo from "../assets/images/logos_insta.png";
 import GmailLogo from "../assets/images/logos_gmail.png";
 import GitLogo from "../assets/images/Git.png";
-import CopyrightLogo from "../assets/images/logos_copyright.png";
+import CompanyLogo from "../assets/images/logo-transparent.png";
+
+import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div style={{ marginLeft: 80, display: "flex" }}>
+    <div className="footer-section">
+      <div className="footer-section__container">
+        <div className="footer-section__links-container">
           <div>
-            <p style={{ fontSize: 16, fontWeight: 600, color: "#CCD6F6" }}>
-              General
-            </p>
+            <p className="heading-tertiary u-margin-bottom-medium">Contact</p>
             <p
-              style={{
-                fontSize: 14,
-                fontWeight: 600,
-                color: "#ffffff",
-                cursor: "pointer",
-              }}
+              className="paragraph-4 u-margin-bottom-big"
+              style={{ fontSize: "14px" }}
             >
-              Home
-            </p>
-            <p
-              style={{
-                fontSize: 14,
-                fontWeight: 600,
-                color: "#ffffff",
-                cursor: "pointer",
-              }}
-            >
-              About
-            </p>
-            <p
-              style={{
-                fontSize: 14,
-                fontWeight: 600,
-                color: "#ffffff",
-                cursor: "pointer",
-              }}
-            >
-              Experience
-            </p>
-            <p
-              style={{
-                fontSize: 14,
-                fontWeight: 600,
-                color: "#ffffff",
-                cursor: "pointer",
-              }}
-            >
-              Works
-            </p>
-            <p
-              style={{
-                fontSize: 14,
-                fontWeight: 600,
-                color: "#ffffff",
-                cursor: "pointer",
-              }}
-            >
-              Technologies
+              City: Indore <br></br>
+              State: M.P. (India)<br></br>
+              Zip-Code: 455001 <br></br>
+              Contact No. : 8619943454 <br></br>
+              Email : vaibhav3kadwey@gmail.com
             </p>
           </div>
-          <div style={{ marginLeft: 50 }}>
-            <p
-              style={{
-                fontSize: 16,
-                fontWeight: 600,
-                color: "#CCD6F6",
-              }}
-            >
-              Specifics
+          <div>
+            <p className="heading-tertiary u-margin-bottom-medium">Menu</p>
+            <p className="paragraph-4">Home</p>
+            <p className="paragraph-4">About</p>
+            <p className="paragraph-4">Experience</p>
+            <p className="paragraph-4">Works</p>
+            <p className="paragraph-4">Technologies</p>
+          </div>
+          <div>
+            <p className="heading-tertiary u-margin-bottom-medium">
+              Recent Posts
             </p>
+            <p className="paragraph-4">About Grids</p>
+            <p className="paragraph-4">About Flex</p>
+            <p className="paragraph-4">New Projects</p>
           </div>
         </div>
-        <div
-          style={{
-            marginRight: 50,
-            display: "flex",
-            justifyContent: "space-evenly",
-            width: "10%",
-            marginTop: 10,
-          }}
-        >
-          <img
-            src={LinkedinLogo}
-            alt="external link logo"
-            width={20}
-            height={20}
-          />
-          <img
-            src={InstaLogo}
-            alt="external link logo"
-            width={20}
-            height={20}
-          />
-          <img src={GitLogo} alt="external link logo" width={20} height={20} />
-          <img
-            src={GmailLogo}
-            alt="external link logo"
-            width={20}
-            height={20}
-          />
+
+        <div className="social__links">
+          <a href="#">
+            <img
+              src={LinkedinLogo}
+              alt="external link logo"
+              className="social__links-link"
+            />
+          </a>
+
+          <a href="#">
+            <img
+              src={InstaLogo}
+              alt="external link logo"
+              className="social__links-link"
+            />
+          </a>
+
+          <a href="#">
+            <img
+              src={GitLogo}
+              alt="external link logo"
+              className="social__links-link"
+            />
+          </a>
+
+          <a href="#">
+            <img
+              src={GmailLogo}
+              alt="external link logo"
+              className="social__links-link"
+            />
+          </a>
         </div>
       </div>
-      <div
-        style={{
-          textAlign: "center",
-        }}
-      >
-        <span style={{ color: "#635F5F", fontSize: 16 }}>
-          Designed and built by
-          <span style={{ color: "#CCD6F6", fontSize: 22, fontWeight: "bold" }}>
-            {"  "}
-            Vaibhav Kadwey
+
+      <div className="footer-section__copyright u-margin-top-big">
+        <img src={CompanyLogo} alt="logo" height={100} width={150} />
+        <span className="developer__text u-margin-top-small">
+          Designed and built by &nbsp;
+          <span className="developer__name">
+            <span className="special-char">V</span>aibhav Kadwey
           </span>
+          <p className="copyright__text u-margin-top-small">
+            Copyright &copy; 2023-24 Vaibhav Kadwey
+          </p>
         </span>
-      </div>
-      <div
-        style={{
-          fontSize: 12,
-          color: "#ffffff",
-          textAlign: "center",
-        }}
-      >
-        <p>Copyright &copy; 2022 Vaibhav Kadwey</p>
       </div>
     </div>
   );
