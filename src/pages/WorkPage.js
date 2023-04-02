@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import WorkCard from "../components/workCard";
 import WorkDescriptionComponent from "../components/workDescriptionComponent";
 
 import AmazonClone from "../assets/images/amazon-clone.png";
+import OutlineButton from "../components/outlineButton";
 
 const WorkPage = () => {
+  const [newList, setNewList] = useState([1, 2, 3, 4, 5, 6]);
   return (
     <div style={{ padding: 50 }}>
       <p className="heading-secondary">Works :</p>
@@ -41,64 +43,42 @@ const WorkPage = () => {
         projectImage={AmazonClone}
       />
 
-      <p
+      <h2
+        className="heading-secondary u-margin-bottom-big"
         style={{
-          color: "#CCD6F6",
-          fontSize: 25,
-          fontWeight: "bold",
           marginLeft: 80,
         }}
       >
         More About Work :
-      </p>
+      </h2>
       <div
         style={{
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
-          marginRight: 80,
+          flexWrap: "wrap",
         }}
       >
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
+        {newList.map((item) => {
+          return (
+            <WorkCard
+              title="Netflix Clone"
+              description=" A nicer look at your GitHub profile and repo stats. Includes data
+          visualizations of your top languages, starred repositories, and sort
+          through your top repos by number of stars, forks, and size. A nicer
+          look at your GitHub profile and repo stats. Includes data
+          visualizations of your top languages, starred repositories, and sort
+          through your top repos by number of stars, forks, and size."
+              technologiesList={["React", "React Native", "Axios", "Netlify"]}
+              gitLink="https://github.com/iCodeWalker/portfolio"
+              externalLink="https://github.com/iCodeWalker/portfolio"
+            />
+          );
+        })}
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-          marginRight: 80,
-          marginTop: 30,
-        }}
-      >
-        <WorkCard />
-        <WorkCard />
-        <WorkCard />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <span
-          style={{
-            color: "#ffffff",
 
-            padding: 15,
-            border: "3px solid #5BE9B9",
-            borderRadius: 15,
-            cursor: "pointer",
-            marginTop: 30,
-            zIndex: 10,
-            marginRight: 80,
-            boxShadow: "2px 2px 30px  #5BE9B9",
-          }}
-        >
-          Show More
-        </span>
+      <div className="center u-margin-top-big">
+        <OutlineButton title="See More" />
       </div>
     </div>
   );

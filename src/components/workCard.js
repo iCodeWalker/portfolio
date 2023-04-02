@@ -1,69 +1,58 @@
 import React from "react";
 import gitLogo from "../assets/images/Git.png";
-import externalLink from "../assets/images/external-link-alt.png";
+import externalLinkLogo from "../assets/images/external-link-alt.png";
 
-const WorkCard = () => {
+import "./workCard.scss";
+
+const WorkCard = ({
+  title,
+  description,
+  technologiesList,
+  gitLink,
+  externalLink,
+}) => {
   return (
-    <div
-      style={{
-        border: "1px solid #5BE9B9",
-        width: "20%",
-        boxShadow: "2px 2px 30px  #5BE9B9",
-        padding: 16,
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          marginTop: 10,
-          marginRight: 10,
-        }}
-      >
-        <img
-          src={gitLogo}
-          alt="Git logo"
-          width={20}
-          height={20}
-          style={{ margin: 10 }}
-        />
+    <div className="work-card">
+      <div className="work-card__header">
+        <p className="work-card__heading">{title}</p>
+        <div>
+          <a href={gitLink} target="_blank" rel="noreferrer">
+            <img
+              src={gitLogo}
+              alt="Git logo"
+              width={18}
+              height={18}
+              className="image__git"
+            />
+          </a>
 
-        <img
-          src={externalLink}
-          alt="external link logo"
-          width={20}
-          height={20}
-          style={{ margin: 10 }}
-        />
+          <a href={externalLink} target="_blank" rel="noreferrer">
+            <img
+              src={externalLinkLogo}
+              alt="external link logo"
+              className="image__ext-link"
+              width={18}
+              height={18}
+            />
+          </a>
+        </div>
       </div>
-      <p
-        style={{
-          fontSize: 18,
-          fontWeight: "500",
-          color: "#ffffff",
-          marginTop: 20,
-        }}
-      >
-        Project Name
-      </p>
-      <div>
-        <p style={{ fontSize: 14, fontWeight: "200", color: "#ffffff" }}>
-          A nicer look at your GitHub profile and repo stats. Includes data
-          visualizations of your top languages, starred repositories, and sort
-          through your top repos by number of stars, forks, and size.
-        </p>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            fontSize: 12,
-            color: "#838181",
-          }}
+
+      <div className="work-card__text  u-margin-top-medium">
+        <p
+          style={{ fontSize: 14, fontWeight: "200", color: "#ffffff" }}
+          className="work-card__text-description u-margin-bottom-medium"
         >
-          <p>React</p>
-          <p>React Native</p>
-          <p>Axios</p>
-          <p>Netlify</p>
+          {description}
+        </p>
+        <div className="work-card__text-technologies">
+          {technologiesList?.map((item, index) => {
+            return (
+              <p className="work-card__text-technologies--item" key={index}>
+                {item}
+              </p>
+            );
+          })}
         </div>
       </div>
     </div>
