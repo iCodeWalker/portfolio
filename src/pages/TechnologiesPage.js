@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import TechBg from "../assets/images/tech_bg.png";
+import React from "react";
+
 import "../App.css";
 
 import RotatingSphere from "../components/RotatingSphere";
