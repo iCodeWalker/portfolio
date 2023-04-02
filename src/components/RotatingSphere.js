@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import TagCloud from "TagCloud";
 
-import "./RotatingSphere.css";
+import "./RotatingSphere.scss";
 
 const RotatingSphere = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const RotatingSphere = () => {
       ];
 
       const options = {
-        radius: 300,
+        radius: 280,
         maxSpeed: "normal",
         initSpeed: "normal",
         keep: true,
