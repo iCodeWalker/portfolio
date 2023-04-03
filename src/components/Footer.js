@@ -1,4 +1,6 @@
 import React from "react";
+import { handleSectionScroll } from "../utilities/functions/handleScroll";
+
 import LinkedinLogo from "../assets/images/logos_linkedin.png";
 import InstaLogo from "../assets/images/logos_insta.png";
 import GmailLogo from "../assets/images/logos_gmail.png";
@@ -24,11 +26,36 @@ const Footer = () => {
           </div>
           <div>
             <p className="heading-tertiary u-margin-bottom-medium">Menu</p>
-            <p className="paragraph-4">Home</p>
-            <p className="paragraph-4">About</p>
-            <p className="paragraph-4">Experience</p>
-            <p className="paragraph-4">Works</p>
-            <p className="paragraph-4">Technologies</p>
+            <p
+              className="paragraph-4"
+              onClick={() => handleSectionScroll("home-section")}
+            >
+              Home
+            </p>
+            <p
+              className="paragraph-4"
+              onClick={() => handleSectionScroll("about-section")}
+            >
+              About
+            </p>
+            <p
+              className="paragraph-4"
+              onClick={() => handleSectionScroll("experience-section")}
+            >
+              Experience
+            </p>
+            <p
+              className="paragraph-4"
+              onClick={() => handleSectionScroll("work-section")}
+            >
+              Works
+            </p>
+            <p
+              className="paragraph-4"
+              onClick={() => handleSectionScroll("tech-section")}
+            >
+              Technologies
+            </p>
           </div>
           <div>
             <p className="heading-tertiary u-margin-bottom-medium">

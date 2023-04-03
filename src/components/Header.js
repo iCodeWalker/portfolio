@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { handleSectionScroll } from "../utilities/functions/handleScroll";
 
 import CompanyLogo from "../assets/images/logo-transparent.png";
 
@@ -13,10 +14,30 @@ const Header = () => {
       </div>
 
       <div className="header__container">
-        <p className="header__item">About</p>
-        <p className="header__item">Experience</p>
-        <p className="header__item">Projects</p>
-        <p className="header__item">Contact</p>
+        <p
+          className="header__item"
+          onClick={() => handleSectionScroll("about-section")}
+        >
+          About
+        </p>
+        <p
+          className="header__item"
+          onClick={() => handleSectionScroll("experience-section")}
+        >
+          Experience
+        </p>
+        <p
+          className="header__item"
+          onClick={() => handleSectionScroll("work-section")}
+        >
+          Projects
+        </p>
+        <p
+          className="header__item"
+          onClick={() => handleSectionScroll("contact-section")}
+        >
+          Contact
+        </p>
       </div>
       <div className="menubar__container">
         <FaBars className="menubar__icon" />
