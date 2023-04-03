@@ -3,6 +3,10 @@
 .about-section {
   padding: 5rem;
 
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 2rem;
+  }
+
   &__container {
     display: flex;
     justify-content: space-evenly;
@@ -79,6 +83,11 @@
     width: 3rem;
     position: absolute;
 
+    @media only screen and (max-width: $bp-mobile) {
+      height: 2rem;
+      width: 2rem;
+    }
+
     &-1 {
       top: 1rem;
       left: 1rem;
@@ -93,12 +102,18 @@
 
     &-3 {
       top: 12rem;
-      left: 12rem;
+      left: 10rem;
+      @media only screen and (max-width: $bp-mobile-small) {
+        left: 2rem;
+      }
     }
 
     &-4 {
       top: 12rem;
-      right: 12rem;
+      right: 10rem;
+      @media only screen and (max-width: $bp-mobile-small) {
+        right: 2rem;
+      }
     }
 
     &-5 {

@@ -5,10 +5,12 @@ import WorkDescriptionComponent from "../components/workDescriptionComponent";
 import AmazonClone from "../assets/images/amazon-clone.png";
 import OutlineButton from "../components/outlineButton";
 
+import "./workPage.scss";
+
 const WorkPage = () => {
   const [newList] = useState([1, 2, 3, 4, 5, 6]);
   return (
-    <div style={{ padding: 50 }}>
+    <div className="work-section">
       <p className="heading-secondary">Works :</p>
       <WorkDescriptionComponent
         title="Amazon Clone"
@@ -43,12 +45,7 @@ const WorkPage = () => {
         projectImage={AmazonClone}
       />
 
-      <h2
-        className="heading-secondary u-margin-bottom-big"
-        style={{
-          marginLeft: 80,
-        }}
-      >
+      <h2 className="heading-secondary u-margin-bottom-big">
         More About Work :
       </h2>
       <div

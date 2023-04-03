@@ -16,6 +16,11 @@
     padding-bottom: 4rem;
   }
 
+  @media only screen and (max-width: $bp-mobile-small) {
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+
   &__text {
     flex: 0 0 50%;
 
@@ -36,7 +41,14 @@
       height: 50%;
       width: 50%;
       margin-top: 4rem;
-      flex: 0 0 90%;
+      flex: 0 0 50%;
+    }
+
+    @media only screen and (max-width: $bp-mobile-small) {
+      height: 30%;
+      width: 30%;
+      margin-top: 2rem;
+      flex: 0 0 50%;
     }
   }
 }

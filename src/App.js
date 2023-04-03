@@ -1,4 +1,3 @@
-import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import WorkPage from "./pages/WorkPage";
@@ -7,50 +6,28 @@ import TechnologiesPage from "./pages/TechnologiesPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 
+import "./App.scss";
+
 function App() {
   return (
     <div>
-      <div
-        style={{
-          borderBottom: "2px solid #5BE9B9",
-        }}
-      >
+      <div className="section-border">
         <HomePage />
       </div>
-      <div
-        style={{
-          borderBottom: "2px solid #5BE9B9",
-        }}
-      >
+      <div className="section-border">
         <AboutPage />
       </div>
 
-      <div
-        style={{
-          borderBottom: "2px solid #5BE9B9",
-        }}
-      >
+      <div className="section-border">
         <WorkPage />
       </div>
-      <div
-        style={{
-          borderBottom: "2px solid #5BE9B9",
-        }}
-      >
+      <div className="section-border">
         <ExperiencePage />
       </div>
-      <div
-        style={{
-          borderBottom: "2px solid #5BE9B9",
-        }}
-      >
+      <div className="section-border">
         <TechnologiesPage />
       </div>
-      <div
-        style={{
-          borderBottom: "2px solid #5BE9B9",
-        }}
-      >
+      <div className="section-border">
         <ContactPage />
       </div>
       <Footer />

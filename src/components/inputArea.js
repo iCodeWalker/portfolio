@@ -6,7 +6,7 @@ const InputArea = () => {
   return (
     <textarea
       rows={10}
-      placeholder="TELL ME SOMETHING"
+      placeholder="Share something you like"
       className="input-area"
     />
   );

@@ -9,10 +9,15 @@
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem #5be9b950;
   width: 30%;
+  margin: 0 1rem;
   transition: all 0.3s;
 
   @media only screen and (max-width: $bp-tablet-port) {
     width: 50%;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    width: 60%;
   }
 
   &:focus {

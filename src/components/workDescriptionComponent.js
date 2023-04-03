@@ -22,7 +22,7 @@ const WorkDescriptionComponent = ({
         />
       </div>
       <div className="work-description__details">
-        <p className="work-description__details-title heading-tertiary">
+        <p className="work-description__details-title heading-tertiary u-margin-bottom-medium">
           {title}
         </p>
         <div className="work-description__details-text--container">

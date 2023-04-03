@@ -16,19 +16,19 @@ const ContactPage = () => {
           to get back to you!
         </p>
       </div>
-      <div className="u-margin-top-big u-margin-bottom-big">
-        <span>
-          <InputField placeholder="Name" type="text" />
-        </span>
+      <div className="input__container u-margin-top-big u-margin-bottom-big">
+        <InputField placeholder="Name" type="text" />
 
-        <span className="u-margin-left-bigger">
-          <InputField placeholder="Email" type="text" />
-        </span>
+        <InputField
+          placeholder="Email"
+          type="text"
+          className="u-margin-top-big"
+        />
       </div>
       <div>
         <InputArea />
       </div>
-      <div className="u-margin-top-big">
+      <div className="u-margin-top-big u-margin-left-big">
         <FilledButton title="Submit" />
       </div>
     </div>

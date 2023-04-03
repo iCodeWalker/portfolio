@@ -14,10 +14,7 @@ const Footer = () => {
         <div className="footer-section__links-container">
           <div>
             <p className="heading-tertiary u-margin-bottom-medium">Contact</p>
-            <p
-              className="paragraph-4 u-margin-bottom-big"
-              style={{ fontSize: "14px" }}
-            >
+            <p className="paragraph-4 u-margin-bottom-big">
               City: Indore <br></br>
               State: M.P. (India)<br></br>
               Zip-Code: 455001 <br></br>

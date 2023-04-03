@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../App.css";
-
 import RotatingSphere from "../components/RotatingSphere";
 
 import "./technologiesPage.scss";
