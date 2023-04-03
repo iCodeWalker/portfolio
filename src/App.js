@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import download from "./assets/images/download.png";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -8,7 +6,6 @@ import ExperiencePage from "./pages/ExperiencePage";
 import TechnologiesPage from "./pages/TechnologiesPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
-import RotatingSphere from "./components/RotatingSphere";
 
 function App() {
   return (

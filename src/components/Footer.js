@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div className="social__links">
-          <a href="#">
+          <a href="https://github.com/iCodeWalker">
             <img
               src={LinkedinLogo}
               alt="external link logo"
@@ -52,7 +52,7 @@ const Footer = () => {
             />
           </a>
 
-          <a href="#">
+          <a href="https://github.com/iCodeWalker">
             <img
               src={InstaLogo}
               alt="external link logo"
@@ -60,7 +60,7 @@ const Footer = () => {
             />
           </a>
 
-          <a href="#">
+          <a href="https://github.com/iCodeWalker">
             <img
               src={GitLogo}
               alt="external link logo"
@@ -68,7 +68,7 @@ const Footer = () => {
             />
           </a>
 
-          <a href="#">
+          <a href="https://github.com/iCodeWalker">
             <img
               src={GmailLogo}
               alt="external link logo"

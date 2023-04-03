@@ -6,7 +6,7 @@ import AmazonClone from "../assets/images/amazon-clone.png";
 import OutlineButton from "../components/outlineButton";
 
 const WorkPage = () => {
-  const [newList, setNewList] = useState([1, 2, 3, 4, 5, 6]);
+  const [newList] = useState([1, 2, 3, 4, 5, 6]);
   return (
     <div style={{ padding: 50 }}>
       <p className="heading-secondary">Works :</p>
