@@ -9,9 +9,7 @@ const TechnologiesPage = () => {
     <div className="technologies-section">
       <div className="technologies-section__text-container">
         <div>
-          <p className="heading-secondary technologies-section__heading">
-            Technologies Worked:
-          </p>
+          <p className=" technologies-section__heading">Technologies Worked:</p>
           <div className="technologies-section__text">
             <p className="technologies-section__text-item">React</p>
             <p className="technologies-section__text-item">React Native</p>
@@ -27,9 +25,7 @@ const TechnologiesPage = () => {
           </div>
         </div>
         <div>
-          <p className="heading-secondary technologies-section__heading">
-            Have Knowledge of:
-          </p>
+          <p className=" technologies-section__heading">Have Knowledge of:</p>
           <div className="technologies-section__text">
             <p className="technologies-section__text-item">NodeJS</p>
             <p className="technologies-section__text-item">Next JS</p>
