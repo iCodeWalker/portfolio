@@ -1,107 +1,76 @@
-import React from "react";
-import ExperienceBg from "../assets/images/ExperienceBackground.png";
+import React, { useState } from "react";
+
+import "./experiencePage.scss";
 
 const ExperiencePage = () => {
+  const data = [
+    {
+      name: "Indexnine",
+      description:
+        "Indexnine ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Indexnine ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum",
+    },
+    {
+      name: "Quazma",
+      description:
+        "Quazma ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
+    },
+    {
+      name: "SD consultancy",
+      description:
+        "SD consultancy ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
+    },
+    {
+      name: "Freelance",
+      description:
+        "Freelance ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
+    },
+  ];
+
+  const [companyName, setCompanyName] = useState("Indexnine");
+
+  const handleDesc = (e) => {
+    const allNames = document.querySelectorAll(
+      ".experience-section__company-name"
+    );
+
+    allNames.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    setCompanyName(e.target.innerHTML);
+
+    e.target.classList.add("active");
+  };
+
+  console.log(companyName);
   return (
-    <div style={{ marginLeft: 80, marginBottom: 100 }}>
-      <p style={{ color: "#CCD6F6", fontSize: 35, fontWeight: "bold" }}>
-        Experience :
-      </p>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+    <div className="experience-section">
+      <h2 className="heading-secondary">Experience :</h2>
+      <div className="experience-section__container">
         <div style={{ marginRight: 20 }}>
-          <p
-            style={{
-              borderBottom: "2px solid #5BE9B9 ",
-              borderRadius: 2,
-              paddingBottom: 5,
-
-              color: "#ffffff",
-              fontWeight: "600",
-              paddingLeft: 20,
-              cursor: "pointer",
-            }}
-          >
-            Indexnine
-          </p>
-          <p
-            style={{
-              borderBottom: "2px solid #5BE9B9 ",
-              borderRadius: 2,
-              paddingBottom: 5,
-
-              color: "#ffffff",
-              fontWeight: "600",
-              paddingLeft: 20,
-              cursor: "pointer",
-            }}
-          >
-            Quazma
-          </p>
-          <p
-            style={{
-              borderBottom: "2px solid #5BE9B9 ",
-              borderRadius: 2,
-              paddingBottom: 5,
-
-              color: "#ffffff",
-              fontWeight: "600",
-              paddingLeft: 20,
-              cursor: "pointer",
-            }}
-          >
-            SD Consultancy
-          </p>
-          <p
-            style={{
-              borderBottom: "2px solid #5BE9B9 ",
-              borderRadius: 2,
-              paddingBottom: 5,
-
-              color: "#ffffff",
-              fontWeight: "600",
-              paddingLeft: 20,
-              cursor: "pointer",
-            }}
-          >
-            Freelance
-          </p>
+          {data.map((item, index) => {
+            return (
+              <p
+                id={index}
+                className={`experience-section__company-name ${
+                  index === 0 ? "active" : ""
+                }`}
+                onClick={handleDesc}
+              >
+                {item.name}
+              </p>
+            );
+          })}
         </div>
 
-        <div
-          style={{
-            width: "40%",
-            padding: 20,
-            paddingTop: 0,
-            borderLeft: "2px solid #5BE9B9",
-            borderRadius: 10,
-            color: "#ffffff",
-            backgroundImage: `url(${ExperienceBg})`,
-            opacity: 0.7,
-          }}
-        >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+        <div className="experience-section__company-description">
+          {data.map((item, index) => {
+            return companyName === item.name ? (
+              <p className="paragraph">{item.description}</p>
+            ) : (
+              <p></p>
+            );
+          })}
         </div>
       </div>
     </div>
