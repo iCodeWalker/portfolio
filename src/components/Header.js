@@ -1,5 +1,5 @@
-import React from "react";
-import { FaBars } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { handleSectionScroll } from "../utilities/functions/handleScroll";
 
 import CompanyLogo from "../assets/images/logo-transparent.png";
@@ -7,40 +7,60 @@ import CompanyLogo from "../assets/images/logo-transparent.png";
 import "./Header.scss";
 
 const Header = () => {
+  const [isIconClick, setIsIconClick] = useState(false);
+
+  const handleMenuBarClick = (e) => {
+    setIsIconClick(!isIconClick);
+  };
+
+  const SectionHandler = (sectionName) => {
+    handleSectionScroll(sectionName);
+    setIsIconClick(false);
+  };
+
   return (
     <div className="header">
       <div className="logo__box">
         <img src={CompanyLogo} alt="logo" class="logo" />
       </div>
 
-      <div className="header__container">
+      <div
+        className={`header__container ${
+          isIconClick ? "header__container-active" : ""
+        }`}
+      >
         <p
           className="header__item"
-          onClick={() => handleSectionScroll("about-section")}
+          onClick={() => SectionHandler("about-section")}
         >
           About
         </p>
         <p
           className="header__item"
-          onClick={() => handleSectionScroll("experience-section")}
+          onClick={() => SectionHandler("experience-section")}
         >
           Experience
         </p>
         <p
           className="header__item"
-          onClick={() => handleSectionScroll("work-section")}
+          onClick={() => SectionHandler("work-section")}
         >
           Projects
         </p>
         <p
           className="header__item"
-          onClick={() => handleSectionScroll("contact-section")}
+          onClick={() => SectionHandler("contact-section")}
         >
           Contact
         </p>
       </div>
-      <div className="menubar__container">
-        <FaBars className="menubar__icon" />
+
+      <div className="menubar" onClick={handleMenuBarClick}>
+        {isIconClick ? (
+          <FaTimes className="menubar__icon" />
+        ) : (
+          <FaBars className="menubar__icon" />
+        )}
       </div>
     </div>
   );
