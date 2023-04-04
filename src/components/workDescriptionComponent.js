@@ -38,11 +38,11 @@ const WorkDescriptionComponent = ({
           })}
 
           <div className="icons-group">
-            <div onClick={gitHubLink} className="icons-group__github">
+            <a href={gitHubLink} className="icons-group__github">
               <FaGithub size={25} />
-            </div>
+            </a>
 
-            <div onClick={projectLink}>
+            <a href={projectLink}>
               <img
                 className="icons-group__projectLink"
                 src={externalLink}
@@ -50,7 +50,7 @@ const WorkDescriptionComponent = ({
                 width={20}
                 height={20}
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>

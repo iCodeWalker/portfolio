@@ -39,7 +39,7 @@ const HomePage = () => {
           </div>
 
           <p className="quote-text u-margin-top-medium">
-            " I Build Things that make web more beautiful. "
+            "I Build Things that make web more beautiful"
           </p>
 
           <div className="u-margin-top-medium">

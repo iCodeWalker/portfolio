@@ -5,3 +5,23 @@
   padding: 0.5rem;
   border-radius: 0.2rem;
 }
+
+@mixin button {
+  display: inline-block;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $color-white;
+  background-color: rgba($color-tertiary, 0.8);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0.1rem 1rem 2rem rgba($color-tertiary, 0.2);
+  transform: scale(1);
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0.1rem 0.9rem 1.8rem rgba($color-tertiary, 0.2);
+  }
+}

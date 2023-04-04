@@ -19,36 +19,36 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <div className="header__main">
       <div className="logo__box">
         <img src={CompanyLogo} alt="logo" class="logo" />
       </div>
 
       <div
-        className={`header__container ${
-          isIconClick ? "header__container-active" : ""
+        className={`header__main__container ${
+          isIconClick ? "header__main__container-active" : ""
         }`}
       >
         <p
-          className="header__item"
+          className="header__main__item"
           onClick={() => SectionHandler("about-section")}
         >
           About
         </p>
         <p
-          className="header__item"
+          className="header__main__item"
           onClick={() => SectionHandler("experience-section")}
         >
           Experience
         </p>
         <p
-          className="header__item"
+          className="header__main__item"
           onClick={() => SectionHandler("work-section")}
         >
           Projects
         </p>
         <p
-          className="header__item"
+          className="header__main__item"
           onClick={() => SectionHandler("contact-section")}
         >
           Contact

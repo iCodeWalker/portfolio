@@ -20,7 +20,7 @@ const Footer = () => {
               City: Indore <br></br>
               State: M.P. (India)<br></br>
               Zip-Code: 455001 <br></br>
-              Contact No. : 8619943454 <br></br>
+              Contact No. :<br></br> +91-8619943454, +91-9926702406 <br></br>
               Email : vaibhav3kadwey@gmail.com
             </p>
           </div>
