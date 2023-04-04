@@ -27,6 +27,10 @@ html {
     font-size: 45%; // 7.2px
   }
 
+  @media only screen and (max-width: $bp-mobile-smallest) {
+    font-size: 40%; // 6.5px
+  }
+
   // @include respond-phone {
   //   font-size: 50%;
   // }
