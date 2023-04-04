@@ -25,7 +25,8 @@
       left: 130%;
       width: 70vw;
       height: 100vh;
-      background-color: rgba($color-primary, 0.9);
+      background-color: rgba($color-primary, 0.98);
+      border-left: 2px solid $color-tertiary;
       z-index: 300;
 
       // opacity: 0;

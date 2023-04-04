@@ -6,6 +6,10 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-mobile-smallest) {
+      flex-direction: column;
+    }
   }
 
   &__links-container {
@@ -48,6 +52,14 @@
   @media only screen and (max-width: $bp-tablet-port) {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  @media only screen and (max-width: $bp-mobile-smallest) {
+    width: 100%;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
   }
 }
 
