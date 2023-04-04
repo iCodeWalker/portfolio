@@ -15,7 +15,7 @@ const AboutPage = () => {
       <p className="heading-secondary">About Me :</p>
       <div className="about-section__container">
         <div className="about-section__text ">
-          <p className="paragraph-2">
+          <p className="paragraph">
             Hello! My name is Vaibhav I’m a software engineer specializing in
             building exceptional digital experiences. and I enjoy creating
             things that live on the internet. My interest in web development
@@ -24,7 +24,7 @@ const AboutPage = () => {
             started doing more study in web development it turns out to be
             challenging and i accepted it.
           </p>
-          <p className="paragraph-2 u-margin-top-small">
+          <p className="paragraph u-margin-top-small">
             Now talking of today, I have worked with some startups, a
             consultancy and as a freelancer in some of the good projects that
             helped me to learn a lot.
@@ -41,6 +41,7 @@ const AboutPage = () => {
                 <li>TypeScript</li>
                 <li>React</li>
                 <li>React Native</li>
+                <li>Flutter </li>
                 <li>Node</li>
                 <li>Express</li>
               </ul>

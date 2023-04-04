@@ -39,10 +39,7 @@ const WorkCard = ({
       </div>
 
       <div className="work-card__text  u-margin-top-medium">
-        <p
-          style={{ fontSize: 14, fontWeight: "200", color: "#ffffff" }}
-          className="work-card__text-description u-margin-bottom-medium"
-        >
+        <p className="work-card__text-description u-margin-bottom-medium">
           {description}
         </p>
         <div className="work-card__text-technologies">
