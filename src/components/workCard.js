@@ -2,8 +2,6 @@ import React from "react";
 import gitLogo from "../assets/images/Git.png";
 import externalLinkLogo from "../assets/images/external-link-alt.png";
 
-import NetflixClone from "../assets/images/netflix-clone.png";
-
 import "./workCard.scss";
 
 const WorkCard = ({

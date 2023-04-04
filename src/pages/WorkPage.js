@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import WorkCard from "../components/workCard";
 import WorkDescriptionComponent from "../components/workDescriptionComponent";
 
-import AmazonClone from "../assets/images/amazon-clone.png";
 import NetflixClone from "../assets/images/netflix-clone.png";
 import CodePapers from "../assets/images/code-papers.png";
 import TuskininkLibrary from "../assets/images/tuskinink-ui-library.png";
@@ -21,8 +20,6 @@ import OutlineButton from "../components/outlineButton";
 import "./workPage.scss";
 
 const WorkPage = () => {
-  const [newList] = useState([1, 2, 3, 4, 5, 6]);
-
   const data = [
     {
       title: "Code Papers",
