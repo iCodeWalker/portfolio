@@ -1,0 +1,31 @@
+@import "../sass/main.scss";
+
+.view-projects {
+  padding: 5rem;
+  animation: onPageLoad 0.5s;
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 500;
+    color: $color-tertiary;
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+
+    align-self: center;
+
+    &:hover {
+      transform: scale((1.1));
+      transform-origin: center;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 2rem;
+  }
+}

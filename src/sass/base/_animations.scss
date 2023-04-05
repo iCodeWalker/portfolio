@@ -14,3 +14,18 @@
     transform: scale(1.2) rotate(360deg);
   }
 }
+
+@keyframes onPageLoad {
+  0% {
+    opacity: 0.1;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
