@@ -4,6 +4,7 @@ import devicesImage from "../assets/images/hero-devices.svg";
 
 import "./homePage.scss";
 import FilledButton from "../components/button";
+import { handleSectionScroll } from "../utilities/functions/handleScroll";
 
 const HomePage = () => {
   return (
@@ -45,7 +46,7 @@ const HomePage = () => {
           <div className="u-margin-top-medium">
             <FilledButton
               title="Contact Now"
-              clickHandler={() => console.log("Clicked contact")}
+              clickHandler={() => handleSectionScroll("footer-section")}
             />
           </div>
         </div>

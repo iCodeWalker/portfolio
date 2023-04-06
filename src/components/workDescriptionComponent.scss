@@ -156,13 +156,16 @@
     transform: scale(1);
     transition: all 0.2s;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
       transform: scale(1.2);
     }
 
-    &:active {
+    &:active,
+    &:visited {
       transform: scale(0.9);
+      text-decoration: none;
     }
   }
 }

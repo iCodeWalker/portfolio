@@ -1,6 +1,6 @@
 import React from "react";
 import externalLink from "../assets/images/external-link-alt.png";
-import { FaGithub } from "react-icons/fa";
+import gitLogo from "../assets/images/Git.png";
 
 import "./workDescriptionComponent.scss";
 
@@ -38,8 +38,14 @@ const WorkDescriptionComponent = ({
           })}
 
           <div className="icons-group">
-            <a href={gitHubLink} className="icons-group__github">
-              <FaGithub size={25} />
+            <a href={gitHubLink} target="_blank" rel="noreferrer">
+              <img
+                src={gitLogo}
+                alt="Git logo"
+                width={30}
+                height={30}
+                className="image__git"
+              />
             </a>
 
             <a href={projectLink}>
@@ -47,8 +53,8 @@ const WorkDescriptionComponent = ({
                 className="icons-group__projectLink"
                 src={externalLink}
                 alt="external link"
-                width={20}
-                height={20}
+                width={18}
+                height={18}
               />
             </a>
           </div>

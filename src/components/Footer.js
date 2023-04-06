@@ -3,7 +3,7 @@ import { handleSectionScroll } from "../utilities/functions/handleScroll";
 
 import LinkedinLogo from "../assets/images/logos_linkedin.png";
 import InstaLogo from "../assets/images/logos_insta.png";
-import GmailLogo from "../assets/images/logos_gmail.png";
+
 import GitLogo from "../assets/images/Git.png";
 import CompanyLogo from "../assets/images/logo-transparent.png";
 
@@ -11,7 +11,7 @@ import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div className="footer-section">
+    <div className="footer-section" id="footer-section">
       <div className="footer-section__container">
         <div className="footer-section__links-container">
           <div>
@@ -57,18 +57,47 @@ const Footer = () => {
               Technologies
             </p>
           </div>
-          <div>
+          <div className="recent__posts">
             <p className="heading-tertiary u-margin-bottom-medium">
               Recent Posts
             </p>
-            <p className="paragraph-4">About Grids</p>
-            <p className="paragraph-4">About Flex</p>
+            <a
+              href="https://codepen.io/Kadwey/pen/NWLVGdM"
+              target="_blank"
+              rel="noreferrer"
+              className="recent__posts--link"
+            >
+              <p className="paragraph-4">About Grids</p>
+            </a>
+
+            <a
+              href="https://codepen.io/Kadwey/pen/JjabMEa"
+              target="_blank"
+              rel="noreferrer"
+              className="recent__posts--link"
+            >
+              <p className="paragraph-4">About flex box</p>
+            </a>
+
+            <a
+              href="https://codepen.io/Kadwey/pen/oNPYeBm"
+              target="_blank"
+              rel="noreferrer"
+              className="recent__posts--link"
+            >
+              <p className="paragraph-4">About Sass</p>
+            </a>
+
             <p className="paragraph-4">New Projects</p>
           </div>
         </div>
 
         <div className="social__links">
-          <a href="https://github.com/iCodeWalker">
+          <a
+            href="https://www.linkedin.com/in/vaibhav-kadwey-258229192/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={LinkedinLogo}
               alt="external link logo"
@@ -76,7 +105,11 @@ const Footer = () => {
             />
           </a>
 
-          <a href="https://github.com/iCodeWalker">
+          <a
+            href="https://www.instagram.com/kadweyvaibhav/?igshid=ZDdkNTZiNTM%3D"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={InstaLogo}
               alt="external link logo"
@@ -84,7 +117,11 @@ const Footer = () => {
             />
           </a>
 
-          <a href="https://github.com/iCodeWalker">
+          <a
+            href="https://github.com/iCodeWalker"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src={GitLogo}
               alt="external link logo"
@@ -92,13 +129,13 @@ const Footer = () => {
             />
           </a>
 
-          <a href="https://github.com/iCodeWalker">
+          {/* <a href="https://github.com/iCodeWalker">
             <img
               src={GmailLogo}
               alt="external link logo"
               className="social__links-link"
             />
-          </a>
+          </a> */}
         </div>
       </div>
 

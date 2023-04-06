@@ -79,3 +79,14 @@
   color: $color-white-primary;
   text-align: center;
 }
+
+.recent__posts {
+  &--link {
+    text-decoration: none;
+
+    &:active,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}

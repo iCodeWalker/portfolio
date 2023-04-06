@@ -14,6 +14,8 @@ import SpaceX from "../assets/images/space-x.png";
 import HouseBuy from "../assets/images/house-buy.png";
 import PortoForge from "../assets/images/porto-forge.png";
 
+import NatureToursNode from "../assets/images/nature-tours-node.png";
+
 import GroupChat from "../assets/images/group-chat.png";
 import ZomatoClone from "../assets/images/zomato-clone.png";
 
@@ -85,10 +87,10 @@ export const projectsData = [
     title: "Amazon Clone",
     description:
       " A nicer look at your GitHub profile and repo stats. Includes data of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size. A nicer look at your GitHub profile and repo stats. Includes data of your top languages, starred repositories.",
-    technologiesUsed: ["React", "Axios", "firebase", "react-icons"],
+    technologiesUsed: ["React", "Axios", "Netlify", "Redux"],
     projectImage: AmazonClone,
-    projectLink: "https://tradersblock.netlify.app/",
-    gitHubLink: "https://github.com/iCodeWalker/Traders_layout",
+    projectLink: "https://amaazon-clone.netlify.app/",
+    gitHubLink: "https://github.com/iCodeWalker/amazon-clone",
   },
 
   {
@@ -208,18 +210,32 @@ export const projectsData = [
     description:
       " A nicer look at your GitHub profile and repo stats. Includes data of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size. A nicer look at your GitHub profile and repo stats. Includes data of your top languages, starred repositories.",
     technologiesUsed: ["Flutter", "Dart", "Animation-Widgets"],
-    projectImage: ZomatoClone,
+    projectImage: "",
     projectLink: "https://github.com/iCodeWalker/flutter_animation_widget",
     gitHubLink: "https://github.com/iCodeWalker/flutter_animation_widget",
   },
+
+  // Code Pen
 
   {
     title: "Code Pen: Works",
     description:
       " A nicer look at your GitHub profile and repo stats. Includes data of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size. A nicer look at your GitHub profile and repo stats. Includes data of your top languages, starred repositories.",
-    technologiesUsed: ["Flutter", "Dart", "Animation-Widgets"],
+    technologiesUsed: ["Sass", "HTML", "React", "JavaScript"],
     projectImage: CodepenAccount,
     projectLink: "https://codepen.io/Kadwey",
     gitHubLink: "#",
+  },
+
+  // Node App
+
+  {
+    title: "Nature Tours App",
+    description:
+      " A nicer look at your GitHub profile and repo stats. Includes data of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size. A nicer look at your GitHub profile and repo stats. Includes data of your top languages, starred repositories.",
+    technologiesUsed: ["Node", "MongoDB", "Axios", "Pug"],
+    projectImage: NatureToursNode,
+    projectLink: "https://naturetours.onrender.com",
+    gitHubLink: "https://github.com/iCodeWalker/NatourProjectAPI",
   },
 ];
