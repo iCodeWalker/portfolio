@@ -29,7 +29,7 @@ const ContactPage = () => {
   };
 
   const sendEmail = (e) => {
-    // e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
     emailjs
       .sendForm(
