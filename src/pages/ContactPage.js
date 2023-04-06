@@ -29,7 +29,7 @@ const ContactPage = () => {
   };
 
   const sendEmail = (e) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    // e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
     emailjs
       .sendForm(
@@ -46,6 +46,8 @@ const ContactPage = () => {
           cleanFields();
           setDisplayModal(true);
 
+          console.log("result", result);
+
           setTimeout(() => {
             setDisplayModal(false);
           }, 4000);
@@ -54,6 +56,7 @@ const ContactPage = () => {
           // show the user an error
           setDisplayLoader(false);
           setError("Something went wrong!. Please try again after some time.");
+          console.log("error", error);
         }
       );
   };
@@ -71,7 +74,6 @@ const ContactPage = () => {
     }, 2000);
   };
 
-  console.log(process.env);
   return (
     <div className="contact-section" id="contact-section">
       <p className="heading-secondary">Get In Touch :</p>

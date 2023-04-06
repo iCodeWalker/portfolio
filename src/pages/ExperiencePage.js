@@ -42,7 +42,6 @@ const ExperiencePage = () => {
     e.target.classList.add("active");
   };
 
-  console.log(companyName);
   return (
     <div className="experience-section">
       <h2 className="heading-secondary">Experience :</h2>
@@ -51,6 +50,7 @@ const ExperiencePage = () => {
           {data.map((item, index) => {
             return (
               <p
+                key={index}
                 id={index}
                 className={`experience-section__company-name ${
                   index === 0 ? "active" : ""
@@ -66,9 +66,11 @@ const ExperiencePage = () => {
         <div className="experience-section__company-description">
           {data.map((item, index) => {
             return companyName === item.name ? (
-              <p className="paragraph">{item.description}</p>
+              <p key={item.name} className="paragraph">
+                {item.description}
+              </p>
             ) : (
-              <p></p>
+              <p key={index}></p>
             );
           })}
         </div>
