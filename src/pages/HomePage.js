@@ -46,7 +46,7 @@ const HomePage = () => {
           <div className="u-margin-top-medium">
             <FilledButton
               title="Contact Now"
-              clickHandler={() => handleSectionScroll("footer-section")}
+              clickHandler={() => handleSectionScroll("contact-section")}
             />
           </div>
         </div>

@@ -1,0 +1,25 @@
+@import "../sass/main.scss";
+
+.modal {
+  height: 30rem;
+  width: 60rem;
+  background-color: $color-white;
+  border-radius: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0.5rem 0.5rem 2rem rgba($color-white, 0.15);
+
+  &__icon {
+    color: $color-tertiary;
+  }
+
+  &__text {
+    color: $color-black;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+}
