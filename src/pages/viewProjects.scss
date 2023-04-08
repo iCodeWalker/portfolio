@@ -3,6 +3,7 @@
 .view-projects {
   padding: 5rem;
   animation: onPageLoad 0.5s;
+  text-align: center;
 
   &__heading {
     font-size: 3rem;
@@ -10,8 +11,7 @@
     color: $color-tertiary;
     margin-bottom: 2rem;
     transition: all 0.3s;
-
-    align-self: center;
+    display: inline-block;
 
     &:hover {
       transform: scale((1.1));
@@ -23,6 +23,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    text-align: left;
   }
 
   @media only screen and (max-width: $bp-mobile) {

@@ -1,7 +1,5 @@
 import React from "react";
 
-import RotatingSphere from "../components/RotatingSphere";
-
 import "./technologiesPage.scss";
 
 const TechnologiesPage = () => {

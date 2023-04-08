@@ -13,19 +13,14 @@ const ViewProjects = () => {
   }, []);
   return (
     <div className="view-projects">
-      <h1 className="view-projects__heading center">All Projects Details</h1>
+      <h1 className="view-projects__heading">All Projects Details</h1>
       <div className="view-projects__container">
         {data.map((item, index) => {
           return (
             <WorkCard
               key={index}
               title={item.title}
-              description=" A nicer look at your GitHub profile and repo stats. Includes data
-          visualizations of your top languages, starred repositories, and sort
-          through your top repos by number of stars, forks, and size. A nicer
-          look at your GitHub profile and repo stats. Includes data
-          visualizations of your top languages, starred repositories, and sort
-          through your top repos by number of stars, forks, and size."
+              description={item.description}
               technologiesList={item.technologiesUsed}
               projectImage={item.projectImage}
               gitLink={item.gitHubLink}

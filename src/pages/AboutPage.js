@@ -16,18 +16,29 @@ const AboutPage = () => {
       <div className="about-section__container">
         <div className="about-section__text ">
           <p className="paragraph">
-            Hello! My name is Vaibhav I’m a software engineer specializing in
-            building exceptional digital experiences. and I enjoy creating
-            things that live on the internet. My interest in web development
-            started back in 2018 when I was doing my graduation. I started with
-            static content website using HTML5, CSS3 and JavaScript. As i
-            started doing more study in web development it turns out to be
-            challenging and i accepted it.
+            Hello! My name is Vaibhav I’m a software engineer specialized in
+            building Exceptional, Attractive and Sophisticated digital
+            experiences. and I enjoy creating things that live on the internet.
+            My interest in web development started back in 2018 when I was doing
+            my graduation. I started with static content website using HTML5,
+            CSS3 and JavaScript. As i did more and more study in web development
+            domain it turns out to be exciting and challenging.
           </p>
           <p className="paragraph u-margin-top-small">
             Now talking of today, I have worked with some startups, a
-            consultancy and as a freelancer in some of the good projects that
-            helped me to learn a lot.
+            consultancy firm and as a freelancer in some of the good projects
+            that helped me to learn a lot to learn and grow.
+          </p>
+
+          <p className="paragraph u-margin-top-small">
+            About my Eduacatonal background, I have done my graduation in &nbsp;
+            <span className="special-char" style={{ fontSize: 20 }}>
+              Engineering in Electical and Electronics Engineering (EEE)&nbsp;
+            </span>
+            in major, from&nbsp;
+            <span className="special-char" style={{ fontSize: 20 }}>
+              Birla Institue of technology, Mesra (BIT, Mesra), India.
+            </span>
           </p>
 
           <div className="about-section__list">
