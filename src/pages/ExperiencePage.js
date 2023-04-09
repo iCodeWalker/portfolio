@@ -1,31 +1,10 @@
 import React, { useState } from "react";
 
+import { companyData } from "../data/companyData";
+
 import "./experiencePage.scss";
 
 const ExperiencePage = () => {
-  const data = [
-    {
-      name: "Indexnine",
-      description:
-        "Indexnine ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Indexnine ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum",
-    },
-    {
-      name: "Quazma",
-      description:
-        "Quazma ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
-    },
-    {
-      name: "SD consultancy",
-      description:
-        "SD consultancy ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
-    },
-    {
-      name: "Freelance",
-      description:
-        "Freelance ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
-    },
-  ];
-
   const [companyName, setCompanyName] = useState("Indexnine");
 
   const handleDesc = (e) => {
@@ -47,7 +26,7 @@ const ExperiencePage = () => {
       <h2 className="heading-secondary">Experience :</h2>
       <div className="experience-section__container">
         <div style={{ marginRight: 20 }}>
-          {data.map((item, index) => {
+          {companyData.map((item, index) => {
             return (
               <p
                 key={index}
@@ -64,11 +43,36 @@ const ExperiencePage = () => {
         </div>
 
         <div className="experience-section__company-description">
-          {data.map((item, index) => {
+          {companyData.map((item, index) => {
             return companyName === item.name ? (
-              <p key={item.name} className="paragraph">
-                {item.description}
-              </p>
+              <div>
+                <div style={{ display: "flex" }}>
+                  <p key={item.name} className="paragraph">
+                    {item.description}{" "}
+                    <span className="paragraph-5">{item.duration}</span>
+                  </p>
+                </div>
+                <div>
+                  {item.project.map((el, i) => {
+                    return (
+                      <div>
+                        <p className="paragraph" key={i}>
+                          {el.title}
+                        </p>
+                        <ul className="project-points">
+                          {el.points.map((point, ind) => {
+                            return (
+                              <li key={ind} className="paragraph-5">
+                                {point}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             ) : (
               <p key={index}></p>
             );

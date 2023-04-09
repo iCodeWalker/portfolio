@@ -21,6 +21,7 @@
   }
 
   &__company-name {
+    width: 18rem;
     font-size: 1.6rem;
     border-bottom: 2px solid $color-tertiary;
     padding: 0.8rem 0.8rem;
@@ -68,4 +69,8 @@
 .active {
   font-size: 2rem;
   color: $color-tertiary;
+}
+
+.project-points {
+  margin-left: 3rem;
 }
