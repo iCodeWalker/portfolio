@@ -1,8 +1,31 @@
 export const companyData = [
   {
+    name: "Cibirix Inc",
+    description: "Software Developer | ",
+    duration: "May 2023 - Present",
+    project: [
+      {
+        title: "Metal 3D",
+        points: [
+          "A 3D Metal Building estimator where users can design their own metal building according to their needs.",
+          "Assigned with the task to calculate pricing of different components and Managing UI according to client requirements.",
+          "Website is built with React.js, SCSS and Three.js. Used Material UI.",
+        ],
+      },
+
+      {
+        title: "Intel Sheds",
+        points: [
+          "A Web app for inputing the data. It is connected with backend and frontend.",
+          "Built With React and SCSS.",
+        ],
+      },
+    ],
+  },
+  {
     name: "Indexnine",
     description: "Software Engineer | ",
-    duration: "June 2022 - December 2022",
+    duration: "June 2022 - April 2023",
     project: [
       {
         title: "Metalmark mobile application development",
@@ -26,7 +49,7 @@ export const companyData = [
   {
     name: "Quazma",
     description: "React Developer | ",
-    duration: "October 2021 - June 2022",
+    duration: "August 2020 - May 2022",
     project: [
       {
         title: "Zenni Opticals",
@@ -42,30 +65,6 @@ export const companyData = [
         points: [
           "Created a shopify Upsell app, using NextJS in frontend and MongoDB as database.",
           "The application helps the website to upsell their products by giving recomendations to user during their purchase journey.",
-        ],
-      },
-    ],
-  },
-
-  {
-    name: "SD Consultancy",
-    description: "Frontend Developer | ",
-    duration: "August 2020 - September 2021",
-    project: [
-      {
-        title: "Betul oil ltd",
-        points: [
-          "Assigned with task to build a website for having an online presence for smooth interactions with customers.",
-          "A website that presents the product varieties the client offers to maximize the customer acquisition.",
-          "Website is built with HTML, CSS in frontend and Django in Backend.",
-        ],
-      },
-
-      {
-        title: "Company's (Employer) Website",
-        points: [
-          "Assigned with task to convert a static (HTML/CSS) website into React web App",
-          "The website is built with a component-based approach. Functional based component is used for creating components.",
         ],
       },
     ],

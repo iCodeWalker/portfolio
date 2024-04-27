@@ -5,7 +5,7 @@ import { companyData } from "../data/companyData";
 import "./experiencePage.scss";
 
 const ExperiencePage = () => {
-  const [companyName, setCompanyName] = useState("Indexnine");
+  const [companyName, setCompanyName] = useState("Cibirix Inc");
 
   const handleDesc = (e) => {
     const allNames = document.querySelectorAll(
